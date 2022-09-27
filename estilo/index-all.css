@@ -1,0 +1,2143 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Trade+Winds&display=swap');
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+body, html {
+    background-color: black;
+    margin: 0px;
+    padding:0px;
+}
+
+
+/* area da cabeça */
+
+#cabeca {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(218, 138, 18);
+}
+.container { 
+    width: 93%;
+    height: 100%;
+}
+.logo-menu {
+    width: 100%;
+    height: 100%; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    /* background-color: chartreuse; */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+
+    padding-left: 20px;
+    /* background-color: chocolate; */
+}
+.logo-maior {
+    display: inline-block;
+    font-size: 48px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(47, 79, 79, 0.719);
+}
+.logo-menor {
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(47, 79, 79, 0.719);
+    padding-bottom: 10px;
+}
+
+/* area do menu */
+
+.menu {
+    display: flex;
+    width: 80%;
+    height: auto;
+    /* background-color: blueviolet; */
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.menu-desck {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.pedir {
+    background-color:rgb(117, 77, 17);
+}
+.menu-desck > ul {
+    display: flex;
+}
+.menu-desck > ul > li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 5px;
+}
+.menu-desck > ul > li > a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: arial;
+    color: #e2dfda;
+}
+a:hover{
+    border-bottom: 2px solid rgb(51, 32, 5);
+}
+#itens {
+    display:none;
+}
+
+i#burguer {
+    display:none;  
+}
+
+/* area do banner */
+
+#banner {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    /* background-color: darkblue; */
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*cardapio*/
+
+#cardapio {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imagens/banner-cardapio.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    margin: 0px;
+    
+}
+.cardapio {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to right, black, rgba(0, 0, 0, 0.801));
+}
+.confira {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    
+}
+.con1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    padding: 20px;
+    font-size: 44px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+.con2 {
+    padding-top:20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-bottom:20px;
+    font-size: 22px;
+    text-align: center;
+    display: flex;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+.con3 p{
+    display: block;
+    width: 117px;
+    height: auto;
+    font-size: 34px;
+    font-family: Arial;
+    border: 1px solid #ffffff;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: lighter;
+    padding: 10px;
+    margin-top: 10px;
+}
+.con3 a {
+    text-decoration: none;
+}
+.con3 a:hover p {
+    color:rgb(148, 148, 80); 
+    background-color: rgba(105, 105, 41, 0.103); 
+    border: 1px solid rgb(160, 160, 82);  
+}
+
+#corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:auto;
+    padding-top:30px;
+    padding-bottom: 30px;
+    background-color:white;
+    
+}
+
+.opcao {
+    display: flex;
+    flex: 1;
+    width:98%;
+    height: auto;
+    padding-top:40px;
+    /* background-color: dodgerblue; */
+}
+
+.opcao > .op {
+    display: flex;
+    flex-direction: column;   
+}
+
+.op-foto > img {
+    display:block;
+    width: 270px;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+    border-bottom: 9px solid rgb(218, 138, 18);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
+    
+}
+.op-foto >img:hover {
+    width:280px;
+}
+.op-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.op-desc > h1, p {
+    display: inline-block;
+    margin:auto; 
+    font-family:'Oswald', sans-serif;
+}
+
+.op-desc > h1 {
+    font-size:26px;
+}
+
+.op-desc > p {
+    font-size:20px;
+    margin-top: 10px;
+    text-indent: 20px;
+}
+
+.op-foto, .op-desc {
+    margin: 30px;
+    margin-top:0px;
+}
+
+/* area de cadastro */
+
+#novidades {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    background-color:#FFC90D;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cadastrar label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center
+}
+
+.novi {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cadastrar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastrar .cad {
+    width: 462px;
+    padding: 10px;
+    margin: 12px;
+    border: none;
+    border-bottom: 1px solid #f7f1dd;
+    background-color:#FFC90D;
+}
+
+.novi > .novi-1, .novi-2 {
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+.novi-1 p {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.novi-2 p {
+    font-size: 27px;
+    font-family:sans-serif;
+}
+
+::placeholder {
+    font-size: 25px;
+    color:#f3f0e4;
+}
+
+.botao {
+    width: 478px;
+    padding: 8px;
+    background-color:black;
+    color:#FFFFFF;
+    font-size: 25px;
+    font-family:'Oswald', sans-serif;
+    border:none;
+    padding-bottom: 10px;
+}
+
+/* area do footer */
+
+#foot {
+    width:100%;
+    height:500px;
+    justify-content: space-between;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.foot {
+    display: flex;
+    width: 100%;
+    height:500px;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.foot-contato {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.foot-social {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.foot-1, .foot-2  {
+    flex: 1;
+    height:auto;
+    padding:50px;   
+}
+
+.foot-3, .foot-4 {
+    flex: 1;
+    height:auto;
+    padding-top: 50px;
+    padding-right: 65px;
+}
+
+.foot-4 {
+    display: flex;
+    height:200px;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 0px;
+    align-items: flex-start;
+}
+
+.foot-4 > h1{
+    color: #ffffff69;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+
+.foot-4 > p{
+   padding: 0px;
+   margin-top: 30px;
+}
+
+.foot-1 > h1, .foot-2 > h1, .foot-3 > h1{
+    font-size: 25px;
+    padding-top: 22px;
+    padding-bottom: 18px;
+    color:#ffffff8e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot-1 > h2, .foot-2 > h2, .foot-3 > h2{
+    font-size: 20px;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    color:#ffffffa2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot-1 > p, .foot-2 > p, .foot-3 > p{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#ffffff86;
+}
+
+.foot-2 > h2 > img{
+    width: 26px;
+    height: auto;
+}
+
+.foot-foto > img {
+    width: 45px;
+    height: auto;
+    margin: 10px;
+}
+
+.foot-fot > img {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.baixe {
+    font-size: 25px;
+    padding-bottom: 0px;
+}
+
+.foot-copy {
+    color: #ffffff6c;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(19, 18, 18);
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+/* area de responsividade */
+
+/* breaking points 
+-----------------------------
+Pequenas telas: até 600px 
+Celular: de 600px até 768px
+tablet: 768px até 1200px
+Grandes telas: acima de 1200px
+-----------------------------
+*/
+
+@media screen and (max-width:1340px) {
+
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #itens {
+        display:none;
+    }
+
+    i#burguer {
+        display:none;  
+    }
+
+
+    #corpo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        height:auto;
+        padding-top:40px;
+        padding-bottom:40px;
+        /* background-color: darkblue; */
+        
+    }
+
+    
+    .opcao {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width:98%;
+        height: auto;
+        padding-top:0px;
+        /* background-color: dodgerblue; */
+    }
+    
+    .opcao > .op {
+        display: flex;
+        flex-direction: row;   
+    }
+    
+    .op-foto > img {
+        display:block;
+        width: 230px;
+        height: auto;
+        margin: auto;
+        object-fit: cover;
+        border-bottom: 9px solid rgb(105, 65, 5);
+        
+    }
+    .op-foto >img:hover {
+        width:160px;
+    }
+    .op-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .op-desc > h1, p {
+        display: inline-block;
+        margin:auto; 
+        margin-top: 0px; 
+        font-family: arial;
+        align-items: center;
+    }
+    
+    .op-desc > h1 {
+        font-size:21px;
+        margin-bottom:5px;
+    }
+    
+    .op-desc > p {
+        font-size:18px;
+        margin-top: 0px;
+        text-indent: 20px;
+    }
+    
+    .op-foto, .op-desc {
+        margin: 15px;
+        margin-top:0px;
+    }  
+
+    #novidades {
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .novi {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+ 
+    .cadastrar .cad {
+        width: 350px;
+        padding: 12px;
+        margin: 5px;
+    }
+    
+    .novi > .novi-1, .novi-2 {
+        display: inline-block;
+        padding:0px;
+        
+    }
+    
+    .novi-1 p {
+        font-size: 32px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .novi-2 p {
+        font-size: 23px;
+        font-family:sans-serif;
+        text-align: center;
+    }
+    
+    ::placeholder {
+        font-size: 22px;
+        color:rgba(153, 39, 39, 0.637);
+    }
+    
+    .botao {
+        width: 365px;
+        font-size: 22px;
+        margin-top:10px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .novi {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-right: 46px; */
+    }
+    .novi-2 > p {
+        font-size:22px;
+    }
+
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    #itens {
+        display:none;
+    }
+
+    i#burguer {
+        display:none;  
+    }
+
+    .foot {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1050px) {
+
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #itens {
+        display:none;
+    }
+
+    i#burguer {
+        display:none;  
+    }
+
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    .cardapio {
+        justify-content: center;
+    }
+     
+    #foot {
+        width:100%;
+        height:auto;
+        justify-content: space-between;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .foot {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:30px ;
+        margin-bottom:30px;
+    }
+    
+    .foot-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .foot-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .foot-1, .foot-2  {
+        display: block;
+        flex: 1;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        padding:5px;   
+    }
+    
+    .foot-3, .foot-4 {
+        display: block;
+        flex: 1;
+        height:auto;
+        padding-top: 35px;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot-4 {
+        display: block;
+        flex: 1;
+        height:auto;
+        padding-top: 74px;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot-4 > h1{
+        color: #ffffff69;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .foot-4 > p{
+        display: block;
+       padding: 0px;
+       margin-top: 20px;
+       text-align: center;
+    }
+    
+    .foot-1 > h1, .foot-2 > h1, .foot-3 > h1{
+        font-size: 20px;
+        padding-top: 22px;
+        padding-bottom: 0px;
+        color:#ffffff8e;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > h2, .foot-2 > h2, .foot-3 > h2{
+        font-size: 15px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        color:#ffffffa2;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > p, .foot-2 > p, .foot-3 > p{
+        display: block;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color:#ffffff86;
+        text-align: center;
+    }
+    
+    .foot-2 > h2 > img{
+        width: 18px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .foot-foto > img {
+        width: 30px;
+        height: auto;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .foot-fot > img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .baixe {
+        display: block;
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .foot-copy {
+        color: #ffffff6c;
+        font-size: 19px;
+        text-align: center;
+        background-color: rgb(19, 18, 18);
+        margin-top: 30px;
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width:1020px) {
+
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #itens {
+        display:none;
+    }
+
+    i#burguer {
+        display:none;  
+    }
+
+
+    #corpo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:100%;
+        height:auto;
+        padding-top:40px;
+        /* background-color: darkblue; */
+        
+    }
+    
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    .opcao {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width:98%;
+        height: auto;
+        padding-top:0px;
+        /* background-color: dodgerblue; */
+    }
+    
+    .opcao > .op {
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    .op-foto > img {
+        display:block;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        object-fit: cover;
+        border-bottom: 9px solid rgb(105, 65, 5);
+        
+    }
+    .op-foto >img:hover {
+        width:160px;
+    }
+    .op-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .op-desc > h1, p {
+        max-width: 430px;
+        display: inline-block;
+        margin:auto; 
+        margin-top: 0px; 
+        font-family: arial;
+        align-items: center;
+    }
+    
+    .op-desc > h1 {
+        font-size:25px;
+        margin-bottom:16px;
+    }
+    
+    .op-desc > p {
+
+        font-size:21px;
+        margin-bottom: 25px;
+        text-indent: 20px;
+    }
+    
+    .op-foto, .op-desc {
+        margin: 15px;
+        margin-top:0px;
+    } 
+
+    #novidades {
+        height: auto;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .novi {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cadastrar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .cadastrar .cad {
+        width: 350px;
+        padding: 12px;
+        margin: 5px;
+    }
+    
+    .novi > .novi-1, .novi-2 {
+        display: inline-block;
+        padding:0px;
+        
+    }
+    
+    .novi-1 p {
+        width: 100%;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .novi-2 p {
+        width: 100%;
+        font-size: 26px;
+        font-family:sans-serif;
+        text-align: center;
+    }
+    
+    ::placeholder {
+        font-size: 22px;
+        color:rgba(153, 39, 39, 0.637);
+    }
+    
+    .botao {
+        width: 365px;
+        font-size: 22px;
+        margin-top:10px;
+    }
+
+    #foot {
+        width:100%;
+        height:auto;
+        justify-content: space-between;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .foot {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:30px ;
+        margin-bottom:30px;
+    }
+    
+    .foot-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .foot-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .foot-1, .foot-2  {
+        display: block;
+        flex: 1;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        padding:5px;   
+    }
+    
+    .foot-3, .foot-4 {
+        display: block;
+        flex: 1;
+        height:auto;
+        padding-top: 35px;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot-4 {
+        display: block;
+        flex: 1;
+        height:auto;
+        padding-top: 74px;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot-4 > h1{
+        color: #ffffff69;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .foot-4 > p{
+        display: block;
+       padding: 0px;
+       margin-top: 20px;
+       text-align: center;
+    }
+    
+    .foot-1 > h1, .foot-2 > h1, .foot-3 > h1{
+        font-size: 20px;
+        padding-top: 22px;
+        padding-bottom: 0px;
+        color:#ffffff8e;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > h2, .foot-2 > h2, .foot-3 > h2{
+        font-size: 15px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        color:#ffffffa2;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > p, .foot-2 > p, .foot-3 > p{
+        display: block;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color:#ffffff86;
+        text-align: center;
+    }
+    
+    .foot-2 > h2 > img{
+        width: 18px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .foot-foto > img {
+        width: 30px;
+        height: auto;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .foot-fot > img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .baixe {
+        display: block;
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .foot-copy {
+        color: #ffffff6c;
+        font-size: 19px;
+        text-align: center;
+        background-color: rgb(19, 18, 18);
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #itens {
+        display:none;
+    }
+
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    i#burguer {
+        display:none;  
+    }
+
+    .menu-desck > ul > li > a {
+        font-size: 18px;
+    }
+    .menu-desck > ul > li {
+        padding: 3px;
+    }
+
+    .foot {
+        height: auto;
+    }
+
+    .novi {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    #novidades {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    #itens {
+        display: none;
+    }
+
+    i#burguer {
+        display:none;  
+    }
+
+    .menu-desck {
+        display: none;
+    }
+    .logo {
+        padding-left: 0px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #cabeca {
+        height: auto;
+    }  
+    .logo-menu {
+        flex-direction: column;
+    }
+    .menu {
+        display: block;
+       width:100%;
+       height: auto;    
+    }
+    #itens {
+        margin: auto;
+        background-color: rgb(100, 65, 11);
+    }
+    #itens > ul > li {
+        /* background-color: blue; */
+        display: block;
+
+        
+    }
+    #itens > ul {
+        display: block;
+        list-style: none;
+        width: 100%;
+        /* background-color: rgba(0, 0, 0, 0.212); */
+    }
+    #itens > ul > li > a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#ffffff;
+        padding: 8px;
+        border: 1px solid black;
+        border-top:1px solid #ffffff57;
+    }
+    .linqui:hover {
+        background-color: #ffffff21;
+        font-size: 19px;
+    }
+
+    i#burguer {
+        background-color: rgba(0, 0, 0, 0.74);
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding:7px ;
+        cursor:pointer;
+    }
+    i#burguer:hover {
+        background-color: #ffffff21;
+        color:black;
+    }
+
+    .cardapio {
+        justify-content: center; 
+    }
+    .con2 {
+        padding-top:20px;
+        padding-bottom:20px;
+        font-size: 16px;
+        text-align: center;
+        display: flex;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #FFFFFF;
+        line-height: 30px;
+    }  
+    
+    /* area footer */
+
+    #foot {
+        width:100%;
+        height:auto;
+        justify-content: space-between;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .foot {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:30px ;
+        margin-bottom:30px;
+    }
+    
+    .foot-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .foot-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .foot-1, .foot-2  {
+        display: block;
+        flex: 1;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        padding:5px;   
+    }
+    
+    .foot-3, .foot-4 {
+        display: block;
+        flex: 1;
+        height:auto;
+        padding-top: 35px;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot-4 {
+        display: block;
+        flex: 1;
+        height:auto;
+        padding-top: 74px;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot-4 > h1{
+        color: #ffffff69;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .foot-4 > p{
+        display: block;
+       padding: 0px;
+       margin-top: 20px;
+       text-align: center;
+    }
+    
+    .foot-1 > h1, .foot-2 > h1, .foot-3 > h1{
+        font-size: 20px;
+        padding-top: 22px;
+        padding-bottom: 0px;
+        color:#ffffff8e;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > h2, .foot-2 > h2, .foot-3 > h2{
+        font-size: 15px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        color:#ffffffa2;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > p, .foot-2 > p, .foot-3 > p{
+        display: block;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color:#ffffff86;
+        text-align: center;
+    }
+    
+    .foot-2 > h2 > img{
+        width: 18px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .foot-foto > img {
+        width: 30px;
+        height: auto;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .foot-fot > img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .baixe {
+        display: block;
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .foot-copy {
+        color: #ffffff6c;
+        font-size: 12px;
+        text-align: center;
+        background-color: rgb(19, 18, 18);
+        margin-top: 30px;
+        padding: 10px;
+    }
+}
+ 
+@media screen and (max-width:690px) {
+   
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    #corpo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height:auto;
+        padding-top:40px;
+        /* background-color: darkblue; */
+        
+    }
+
+    .opcao {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width:98%;
+        height: auto;
+        padding-top:0px;
+        /* background-color: dodgerblue; */
+    }
+
+    .opcao > .op {
+        display: flex;
+        flex-direction: row; 
+        margin-bottom: 30px;
+    }
+
+    .op-foto > img {
+        display:block;
+        width: 280px;
+        height: auto;
+        margin: auto;
+        object-fit: cover;
+        border-bottom: 9px solid rgb(105, 65, 5);
+        
+    }
+    .op-foto >img:hover {
+        width:160px;
+    }
+    .op-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .op-desc > h1, p {
+        display: inline-block;
+        margin:auto; 
+        margin-top: 0px; 
+        font-family: arial;
+    }
+
+    .op-desc > h1 {
+        font-size:20px;
+        margin-bottom:18px;
+    }
+
+    .op-desc > p {
+        font-size:19px;
+        margin-top: 0px;
+        text-indent: 20px;
+    }
+
+    .op-foto, .op-desc {
+        margin: 15px;
+        margin-top:0px;
+    }
+
+    #foot {
+        width:100%;
+        height:auto;
+        justify-content: space-between;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .foot {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px ;
+        margin-bottom:30px;
+    }
+    
+    .foot-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .foot-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .foot-1, .foot-2  {
+        flex: 1;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        padding:5px;   
+    }
+    
+    .foot-3, .foot-4 {
+        flex: 1;
+        height:auto;
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+    
+    .foot-4 {
+        display: flex;
+        height:200px;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0px;
+        align-items: center;
+    }
+    
+    .foot-4 > h1{
+        color: #ffffff69;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .foot-4 > p{
+        display: block;
+       padding: 0px;
+       margin-top: 20px;
+       text-align: center;
+    }
+    
+    .foot-1 > h1, .foot-2 > h1, .foot-3 > h1{
+        font-size: 20px;
+        padding-top: 22px;
+        padding-bottom: 0px;
+        color:#ffffff8e;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > h2, .foot-2 > h2, .foot-3 > h2{
+        font-size: 15px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        color:#ffffffa2;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > p, .foot-2 > p, .foot-3 > p{
+        display: block;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color:#ffffff86;
+        text-align: center;
+    }
+    
+    .foot-2 > h2 > img{
+        width: 18px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .foot-foto > img {
+        width: 30px;
+        height: auto;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .foot-fot > img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .baixe {
+        display: block;
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .foot-copy {
+        color: #ffffff6c;
+        font-size: 12px;
+        text-align: center;
+        background-color: rgb(19, 18, 18);
+        margin-top: 30px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:515px) {
+
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    #banner {
+        width: 100%;
+        height: 85vh;
+        display:flex;
+        justify-content: center;
+        /* background-color: darkblue; */
+    }
+
+    #corpo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height:auto;
+        padding-top:40px;
+        /* background-color: darkblue; */
+        
+    }
+
+    .opcao {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width:98%;
+        height: auto;
+        padding-top:0px;
+        /* background-color: dodgerblue; */
+    }
+
+    .opcao > .op {
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 30px;
+    }
+
+    .op-foto > img {
+        display:block;
+        width: 315px;
+        height: auto;
+        margin: auto;
+        object-fit: cover;
+        border-bottom: 9px solid rgb(105, 65, 5);
+        
+    }
+    .op-foto >img:hover {
+        width:160px;
+    }
+    .op-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .op-desc > h1, p {
+        display: inline-block;
+        margin:auto; 
+        font-family: arial;
+    }
+
+    .op-desc > h1 {
+        font-size:20px;
+    }
+
+    .op-desc > p {
+        font-size:19px;
+        text-indent: 20px;
+    }
+
+    .op-foto, .op-desc {
+        margin: 15px;
+        margin-top:0px;
+    }
+
+    #novidades {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .novi {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+ 
+    .cadastrar .cad {
+        width: 240px;
+        padding: 7px;
+        margin: 5px;
+    }
+    
+    .novi > .novi-1, .novi-2 {
+        display: inline-block;
+        padding: 5px;
+        
+    }
+    
+    .novi-1 p {
+        font-size: px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+    
+    .novi-2 p {
+        font-size: 20px;
+        font-family:sans-serif;
+        text-align: center;
+    }
+    
+    ::placeholder {
+        font-size: 18px;
+        color:rgba(153, 39, 39, 0.637);
+    }
+    
+    .botao {
+        width: 250px;
+        font-size: 18px;
+        margin-top:10px;
+    }
+
+    /* area footer */
+
+    #foot {
+        width:100%;
+        height:auto;
+        justify-content: space-between;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .foot {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px ;
+        margin-bottom:30px;
+    }
+    
+    .foot-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .foot-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .foot-1, .foot-2  {
+        flex: 1;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        padding:5px;   
+    }
+    
+    .foot-3, .foot-4 {
+        flex: 1;
+        height:auto;
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+    
+    .foot-4 {
+        display: flex;
+        height:200px;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0px;
+        align-items: center;
+    }
+    
+    .foot-4 > h1{
+        color: #ffffff69;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .foot-4 > p{
+        display: block;
+       padding: 0px;
+       margin-top: 20px;
+       text-align: center;
+    }
+    
+    .foot-1 > h1, .foot-2 > h1, .foot-3 > h1{
+        font-size: 20px;
+        padding-top: 22px;
+        padding-bottom: 0px;
+        color:#ffffff8e;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > h2, .foot-2 > h2, .foot-3 > h2{
+        font-size: 15px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        color:#ffffffa2;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > p, .foot-2 > p, .foot-3 > p{
+        display: block;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color:#ffffff86;
+        text-align: center;
+    }
+    
+    .foot-2 > h2 > img{
+        width: 18px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .foot-foto > img {
+        width: 30px;
+        height: auto;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .foot-fot > img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .baixe {
+        display: block;
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .foot-copy {
+        color: #ffffff6c;
+        font-size: 12px;
+        text-align: center;
+        background-color: rgb(19, 18, 18);
+        margin-top: 30px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    html, body {
+        margin:0px;
+        padding:0px;
+    }
+
+    #cardapio {
+        background-image: url('../imagens/banner-cardapio.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;      
+    }
+
+    #banner {
+        width: 100%;
+        height: 80vh;
+        display:flex;
+        justify-content: center;
+        /* background-color: darkblue; */
+    }
+
+    .op-foto > img {
+        display:block;
+        width: 243px;
+        height: auto;
+        margin: auto;
+        object-fit: cover;
+        border-bottom: 9px solid rgb(105, 65, 5);   
+    }
+    #novidades {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .novi {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+ 
+    .cadastrar .cad {
+        width: 240px;
+        padding: 7px;
+        margin: 5px;
+    }
+    
+    .novi > .novi-1, .novi-2 {
+        display: inline-block;
+        padding: 5px;
+        
+    }
+    
+    .novi-1 p {
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .novi-2 p {
+        font-size: 20px;
+        font-family:sans-serif;
+        text-align: center;
+    }
+    
+    ::placeholder {
+        font-size: 18px;
+        color:rgba(153, 39, 39, 0.637);
+    }
+    
+    .botao {
+        width: 250px;
+        font-size: 18px;
+        margin-top:10px;
+    }
+
+    /* area do footer */
+
+    #foot {
+        width:100%;
+        height:auto;
+        justify-content: space-between;
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .foot {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px ;
+        margin-bottom:30px;
+    }
+    
+    .foot-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .foot-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .foot-1, .foot-2  {
+        flex: 1;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        padding:5px;   
+    }
+    
+    .foot-3, .foot-4 {
+        flex: 1;
+        height:auto;
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+    
+    .foot-4 {
+        display: flex;
+        height:200px;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0px;
+        align-items: center;
+    }
+    
+    .foot-4 > h1{
+        color: #ffffff69;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .foot-4 > p{
+        display: block;
+       padding: 0px;
+       margin-top: 20px;
+       text-align: center;
+    }
+    
+    .foot-1 > h1, .foot-2 > h1, .foot-3 > h1{
+        font-size: 20px;
+        padding-top: 22px;
+        padding-bottom: 0px;
+        color:#ffffff8e;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > h2, .foot-2 > h2, .foot-3 > h2{
+        font-size: 15px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        color:#ffffffa2;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    
+    .foot-1 > p, .foot-2 > p, .foot-3 > p{
+        display: block;
+        font-size: 15px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        color:#ffffff86;
+        text-align: center;
+    }
+    
+    .foot-2 > h2 > img{
+        width: 18px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .foot-foto > img {
+        width: 30px;
+        height: auto;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .foot-fot > img {
+        width: 120px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .baixe {
+        display: block;
+        padding-bottom: 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .foot-copy {
+        color: #ffffff6c;
+        font-size: 12px;
+        text-align: center;
+        background-color: rgb(19, 18, 18);
+        margin-top: 30px;
+        padding: 10px;
+    }
+    
+}
+
+

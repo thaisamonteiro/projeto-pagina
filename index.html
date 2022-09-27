@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilli Burguer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/index-all.css">
+    
+</head>
+<body>
+    <!-- area da cabeça -->
+    <header id="cabeca">
+        <div class="container">
+            <div class="logo-menu">
+                <div class="logo">
+                    <p class="logo-maior">Chilli</p>
+                    <p class="logo-menor">Burgers</p>
+                </div>
+                
+                <div class="menu">
+                    <nav class="menu-desck">
+                        <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Chilli</a></li>
+                          <li><a href="#">Restaurantes</a></li>
+                          <li><a href="#">Franquiados</a></li>
+                          <li><a href="#">Investidores</a></li>
+                          <li><a href="#">trabalhe conosco</a></li>
+                          <li class="pedir"><a href="#">Pedir Agora</a></li>
+                        </ul>
+                    </nav> 
+                    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> 
+                    <menu id="itens">
+                        <ul>
+                            <li><a class="linqui" href="#">Home</a></li>
+                            <li><a class="linqui" href="#">Chilli</a></li>
+                            <li><a class="linqui" href="#">Restaurantes</a></li>
+                            <li><a class="linqui" href="#">trabalhe conosco</a></li>
+                            <li><a class="linqui" href="#">Delivery</a></li>
+                          </ul>
+                    </menu>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        
+        <iframe src="pag1.html" frameborder="0"></iframe>
+        
+    </section>
+
+    <section id="cardapio">
+        <div class="cardapio">
+            <div class="confira">
+                <div class="con1">CARDÁPIO</div>
+                <div class="con2">Entradas, Sanduíches, Pizzas, Breakfast, Saladas, Sopas, Sobremesas e bebidas das mais variadas. Só a Chilli garante o sabor da gastronomia Brasileira</div>
+                <div class="con3"><a href="#">
+                    <p>confira</p>
+                </a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="corpo">
+        <div class="opcao">
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/sanduíches.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Sanduíches</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/Pizzas.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Pizzas</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/Saladas.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Saladas</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/Breakfast.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Breakfast</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+        </div>
+        <div class="opcao">
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/Entradas.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Entradas</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/sobremesas.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Sobremesas</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/Sopas.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Sopas</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+            <div class="op">
+                <a href="">
+                    <div class="op-foto"><img src="imagens/Bebidas.jpg" alt="img de sanduíche"></div>
+                </a>
+                <div class="op-desc"> <h1>Bebidas</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste labore aut, voluptatum nemo</p> </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="novidades">
+        <div class="novi">
+            <div class="novi-1"><p>QUER RECEBER NOSSAS NOVIDADES</p></div>
+            <div class="novi-2"><p>Inaugurações, promoções exclusivas no seu e-mail</p></div>
+        </div>
+        <div class="cadastrar">
+            <form action="pag-cadastro.php">
+                <label>
+                    <input class="cad" type="text" name="nome" placeholder="Nome do usuário" requiered>
+                    <input class="cad" type="email" name="e-mail" placeholder="E-mail" required>
+                    <input class="botao" type="submit" value="Inscreva-se">
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <footer id="foot">
+
+        <div class="foot">
+            <div class="foot-social">
+                <div class="foot-3">
+                    <h1>Redes Sociais</h1>
+                    <h2>Siga nossas redes</h2>
+                    <p class="foot-foto">
+                        <img src="imagens/icone-facebook.png" alt="logo facebook">
+                        <img src="imagens/icone-tik.png" alt="logo tiktok">
+                        <img src="imagens/insta.png" alt="logo instagram">
+                    </p>
+                </div>
+                <div class="foot-4">
+                    <h1 class="baixe">Baixe nosso app</h1>
+                    <p class="foot-fot">
+                        <img src="imagens/app-google.png" alt="logo facebook">
+                        <img src="imagens/app-phone.png" alt="logo tiktok">
+                    </p>
+                </div>
+            </div>
+            <div class="foot-contato">
+                <div class="foot-1">
+                    <h1>Horários de atendimento</h1>
+                    <h2>Salão</h2>
+                    <p>De Terça-feira a Domingo <br>
+                    das 8:00 da manhã as 23:30 da noite</p>
+                    <h2>Delivery</h2>
+                    <p>De Terça-feira a Domingo <br>
+                    das 18:00 da manhã as 23:30 da noite</p>
+                </div>
+                <address class="foot-2">
+                    <h1>Area de contato</h1>
+                    <h2> <img src="imagens/icone-whatsapp.png" alt="logo do whatsapp"> Telefone</h2>
+                    <p>55 41 000-0000</p>
+                    <h2> <img src="imagens/icone-mail.png" alt="logo do e-mail"> E-mail</h2>
+                    <p>chillihamburgueria@restaurantes.com</p>
+                    <h2> <img src="imagens/icone-endereco.png" alt="logo de endereço"> Endereço</h2>
+                    <p>Rua: 15 de Novembro, 150 <br>
+                    Centro - Curitiba</p>
+                </address>
+            </div>
+        </div>
+       
+        <div class="foot-copy">© 2022 Chilli Burgers – Todos os direitos reservados.</div>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
